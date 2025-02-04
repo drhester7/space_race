@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip3 install -e .
+uv pip install -e .
 
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
