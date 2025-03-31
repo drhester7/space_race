@@ -39,23 +39,28 @@ def parse_args():
     
 
     # Start command
-    parser_init = sub_parsers.add_parser(
+    parser_start = sub_parsers.add_parser(
         "start",
         help="This command starts the clock on your tech research task."
     )
-    parser_init.add_argument(
+    parser_start.add_argument(
         "name",
         help="Research Topic. AKA the tech you're researching."
     )
 
     # Stop command
-    parser_init = sub_parsers.add_parser(
+    parser_stop = sub_parsers.add_parser(
         "stop",
         help="This command stops the clock on your tech research task."
     )
-    parser_init.add_argument(
+    parser_stop.add_argument(
         "name",
         help="Research Topic. AKA the tech you're researching."
+    )
+
+    parser_list = sub_parsers.add_parser(
+        "list",
+        help="List all tasks"
     )
 
     return parser.parse_args()

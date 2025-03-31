@@ -12,10 +12,13 @@ The space race was all about research and development. In the same way, learning
     space_race init <name> <description>
 
     # start a session
-    space-race start <name>
+    space_race start <name>
 
     # stop a session
-    space-race stop <name>
+    space_race stop <name>
+
+    # list all learnings
+    space_race list
 
 ```
 
@@ -23,10 +26,11 @@ The space race was all about research and development. In the same way, learning
 
 ### New Features
 
-* List tasks
 * Pause, resume tasks, log distractions
 * Init task on start
 * summarize learnings
+* set default task
+* delete task
 
 ### Improvements
 

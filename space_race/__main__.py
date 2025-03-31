@@ -17,6 +17,8 @@ def main():
         tech.start_research(args.name)
     elif args.command == "stop":
         tech.halt_research(args.name)
+    elif args.command == "list":
+        print(json.dumps(tech.tasks, indent=4))
     else:
         print("Invalid command. Use --help for usage instructions.")
 
