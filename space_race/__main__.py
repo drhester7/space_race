@@ -19,6 +19,10 @@ def main():
         tech.halt_research(args.name)
     elif args.command == "list":
         print(json.dumps(tech.tasks, indent=4))
+    elif args.command == "delete":
+        tech.delete_reasearch(args.name)
+    elif args.command == "set":
+        tech.set_default(args.name)
     else:
         print("Invalid command. Use --help for usage instructions.")
 

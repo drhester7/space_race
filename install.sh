@@ -10,7 +10,7 @@ config_file="$config_dir/config.json"
 tasks_file="$config_dir/tasks.json"
 
 if [ ! -d "$config_dir" ]; then
-    mkdir "$HOME/.space_race/"
+    mkdir "$config_dir"
     printf "${GREEN}Created %s directory.\n" "$config_dir"
 else
     printf "${BLUE}Existing config directory found.\n"

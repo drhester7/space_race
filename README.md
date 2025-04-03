@@ -27,10 +27,8 @@ The space race was all about research and development. In the same way, learning
 ### New Features
 
 * Pause, resume tasks, log distractions
-* Init task on start
 * summarize learnings
-* set default task
-* delete task
+* save initial start time. delete start and end time on stop. Check for elapsed time on stop, add calculated elapsed time if exists
 
 ### Improvements
 

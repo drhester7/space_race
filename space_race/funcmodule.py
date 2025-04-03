@@ -44,7 +44,8 @@ def parse_args():
         help="This command starts the clock on your tech research task."
     )
     parser_start.add_argument(
-        "name",
+        "-n", "--name",
+        default=None,
         help="Research Topic. AKA the tech you're researching."
     )
 
@@ -58,9 +59,29 @@ def parse_args():
         help="Research Topic. AKA the tech you're researching."
     )
 
-    parser_list = sub_parsers.add_parser(
+    sub_parsers.add_parser(
         "list",
         help="List all tasks"
+    )
+
+    # Delete comand
+    parser_delete = sub_parsers.add_parser(
+        "delete",
+        help="Delete a task"
+    )
+    parser_delete.add_argument(
+        "name",
+        help="Research Topic. AKA the tech you're researching."
+    )
+    
+    # Set command
+    parser_set = sub_parsers.add_parser(
+        "set",
+        help="Set a default task"
+    )
+    parser_set.add_argument(
+        "name",
+        help="Research Topic. AKA the tech you're researching."
     )
 
     return parser.parse_args()
