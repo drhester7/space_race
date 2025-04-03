@@ -28,9 +28,9 @@ The space race was all about research and development. In the same way, learning
 
 * Pause, resume tasks, log distractions
 * summarize learnings
-* save initial start time. delete start and end time on stop. Check for elapsed time on stop, add calculated elapsed time if exists
 
 ### Improvements
 
 * check if task has been started
 * check if task has been stopped
+* save initial start time. delete start and end time on stop. Check for elapsed time on stop, add calculated elapsed time if exists
