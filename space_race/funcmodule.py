@@ -59,6 +59,7 @@ def parse_args():
         help="Research Topic. AKA the tech you're researching."
     )
 
+    # List command
     sub_parsers.add_parser(
         "list",
         help="List all tasks"
